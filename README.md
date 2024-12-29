@@ -1,10 +1,18 @@
 # Philips Hue Data Collector
 
+## Installation
+
+### Requirements
+
+Have added secrets as environment variables.
+
 `~/.bashrc`
 ```
 export PHILIPS_HUE_API_HOST="192.168.x.y"
 export PHILIPS_HUE_API_USERNAME="olaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" # how to generate is described here https://github.com/ldrahnik/philips-hue-random-notes
 ```
+
+### Steps
 
 ```
 $ cat philips_hue_data_collector.service | API_HOST=$PHILIPS_HUE_API_HOST API_USERNAME=$PHILIPS_HUE_API_USERNAME envsubst '$API_HOST $API_USERNAME' | sudo tee /usr/lib/systemd/user/philips_hue_data_collector@.service
