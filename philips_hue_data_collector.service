@@ -1,0 +1,15 @@
+[Unit]
+Description=Philips Hue Data Collector
+
+[Service]
+Type=simple
+StandardOutput=append:/var/log/philips-hue-data-collector/error.log
+StandardError=append:/var/log/philips-hue-data-collector/error.log
+ExecStart=/usr/bin/env bash /usr/share/philips-hue-data-collector/script.sh
+Environment="LOGS_DIR=/var/log/philips-hue-data-collector"
+Environment="API_HOST=$API_HOST"
+Environment="API_USERNAME=$API_USERNAME"
+Environment="API_TEMPERATURE_SENSOR_ID=30"
+
+[Install]
+WantedBy=default.target

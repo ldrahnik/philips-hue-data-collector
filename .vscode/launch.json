@@ -1,0 +1,20 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "Bash-Debug (simplest configuration)",
+      "program": "${file}",
+      "env": {
+        "LOGS_DIR":"/var/log/philips-hue-data-collector",
+        "API_HOST":"${env:PHILIPS_HUE_API_HOST}",
+        "API_USERNAME":"${env:PHILIPS_HUE_API_USERNAME}",
+        "API_TEMPERATURE_SENSOR_ID":"30"
+      }
+    }
+  ]
+}
