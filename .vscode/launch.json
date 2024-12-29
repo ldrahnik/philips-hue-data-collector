@@ -13,7 +13,8 @@
         "LOGS_DIR":"/var/log/philips-hue-data-collector",
         "API_HOST":"${env:PHILIPS_HUE_API_HOST}",
         "API_USERNAME":"${env:PHILIPS_HUE_API_USERNAME}",
-        "API_TEMPERATURE_SENSOR_ID":"30"
+        "API_TEMPERATURE_SENSOR_ID":"30",
+        "API_AMBIENT_LIGHT_SENSOR_ID": "29"
       }
     }
   ]

@@ -30,3 +30,15 @@ $ sudo cp script.sh /usr/share/philips-hue-data-collector/script.sh
 $ sudo chown -R $USER:$USER /usr/share/philips-hue-data-collector
 $ sudo chmod +x /usr/share/philips-hue-data-collector/script.sh
 ```
+
+## Output (.csv files)
+
+```
+$ tail -f /var/log/philips-hue-data-collector/temperature_sensor.csv
+Datetime,State
+2024-12-29T12:39:49;"temperature=1980,lastupdated=2024-12-29T12:39:49"
+
+$ tail -f /var/log/philips-hue-data-collector/ambient_light_sensor.csv
+Datetime,State
+2024-12-29T12:46:57;"lightlevel=1360,dark=true,daylight=false,lastupdated=2024-12-29T12:46:57
+```

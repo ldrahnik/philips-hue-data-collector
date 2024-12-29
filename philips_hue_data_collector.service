@@ -10,6 +10,7 @@ Environment="LOGS_DIR=/var/log/philips-hue-data-collector"
 Environment="API_HOST=$API_HOST"
 Environment="API_USERNAME=$API_USERNAME"
 Environment="API_TEMPERATURE_SENSOR_ID=30"
+Environment="API_AMBIENT_LIGHT_SENSOR_ID=29"
 
 [Install]
 WantedBy=default.target
